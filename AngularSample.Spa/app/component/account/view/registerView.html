@@ -1,0 +1,58 @@
+﻿<style>
+    .ng-invalid {
+        border-color: red;
+        outline-color: red;
+    }
+
+    .ng-valid {
+        border-color: green;
+        outline-color: green;
+    }
+</style>
+
+<div class="well">
+    {{title}}
+</div>
+
+
+<form name="frm" novalidate>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email"
+               class="form-control"
+               name="exampleInputEmail1"
+               placeholder="Enter email"
+               ng-model="user.email"
+               required>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password"
+               class="form-control"
+               name="exampleInputPassword1"
+               placeholder="Password"
+               ng-model="user.password"
+               required
+               >
+    </div>
+    <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password"
+               class="form-control"
+               name="confirmPassword"
+               placeholder="Re-Type Password"
+               ng-model="user.confirmPassword"
+               compare-to="user.password"
+               required>
+
+        <div ng-messages="frm.confirmPassword.$error" class="errors">
+            <span ng-message="required">Required!</span>
+            <span ng-message="compareTo">Mismatch</span>
+        </div>
+    </div>
+
+    <button type="submit" 
+            class="btn btn-default"
+            ng-disabled="frm.$invalid"
+            >Submit</button>
+</form>

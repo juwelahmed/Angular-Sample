@@ -1,0 +1,6 @@
+C:\Users\Juwel Ahmed\Documents\Visual Studio 2013\Projects\AngularSample\AngularSample.Spa\bin\AngularSample.Spa.dll.config
+C:\Users\Juwel Ahmed\Documents\Visual Studio 2013\Projects\AngularSample\AngularSample.Spa\bin\AngularSample.Spa.dll
+C:\Users\Juwel Ahmed\Documents\Visual Studio 2013\Projects\AngularSample\AngularSample.Spa\bin\AngularSample.Spa.pdb
+C:\Users\Juwel Ahmed\Documents\Visual Studio 2013\Projects\AngularSample\AngularSample.Spa\obj\Debug\AngularSample.Spa.csprojResolveAssemblyReference.cache
+C:\Users\Juwel Ahmed\Documents\Visual Studio 2013\Projects\AngularSample\AngularSample.Spa\obj\Debug\AngularSample.Spa.dll
+C:\Users\Juwel Ahmed\Documents\Visual Studio 2013\Projects\AngularSample\AngularSample.Spa\obj\Debug\AngularSample.Spa.pdb

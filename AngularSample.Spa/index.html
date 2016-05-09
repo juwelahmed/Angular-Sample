@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title></title>
+    <base href="/" />
+    <link href="app/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="app/css/toaster.min.css" rel="stylesheet" />
+    <style>
+        .shadow {
+            box-shadow: 1px 2px 6px #888888;
+        }
+
+        .buffer {
+            padding-top: 50px;
+        }
+        .datepicker.dropdown-menu {
+            width: 250px;
+            height: 240px;
+            border-bottom: 1px solid gray;
+        }
+
+            .datepicker.dropdown-menu button {
+                outline: none;
+                border: 0px;
+            }
+            .datepicker.dropdown-menu tbody {
+                height: 180px;
+            }
+
+                .datepicker.dropdown-menu tbody button {
+                    padding: 6px;
+                }
+
+            .datepicker.dropdown-menu.datepicker-mode-1 tbody button,
+            .datepicker.dropdown-menu.datepicker-mode-2 tbody button {
+                height: 65px;
+            }
+
+        .timepicker.dropdown-menu {
+            padding: 0 4px;
+        }
+
+            .timepicker.dropdown-menu button {
+                outline: none;
+                border: 0px;
+            }
+
+            .timepicker.dropdown-menu tbody button {
+                padding: 6px;
+            }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Brand</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li ><a href="/student">Student</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/register">Register</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container buffer">
+        <ng-view></ng-view>
+    </div>
+    
+    <script src="app/js/jquery-1.10.2.min.js"></script>
+    <script src="app/js/angular.min.js"></script>
+    <script src="app/js/angular-animate.min.js"></script>
+    <script src="app/js/angular-route.min.js"></script>
+    <script src="app/js/angular-messages.min.js"></script>
+    <script src="app/js/bootstrap.min.js"></script>
+    <script src="app/js/toaster.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/js/angular-strap.js"></script>
+    <script src="app/js/angular-strap.tpl.min.js"></script>
+    <script src="app/shared/controller/ContactCtrl.js"></script>
+    <script src="app/shared/controller/HomeCtrl.js"></script>
+    <script src="app/component/student/service/StudentService.js"></script>
+    <script src="app/component/student/controller/StudentCtrl.js"></script>
+    <script src="app/component/student/controller/StudentEditCtrl.js"></script>
+
+    <script src="app/shared/directive/compareTo.js"></script>
+    <script src="app/component/account/controller/RegisterCtrl.js"></script>
+
+</body>
+
+</html>

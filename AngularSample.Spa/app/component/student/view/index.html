@@ -1,0 +1,47 @@
+﻿<div class="row">
+    <h1>{{title}}</h1>
+</div>
+<!--<toaster-container toaster-options="{'time-out': 3000, 'close-button':true, 'animation-class': 'toast-top-right'}"></toaster-container>-->
+<toaster-container toaster-options="{
+  'closeButton': false,
+  'debug': false,
+  'positionClass': 'toast-top-right',
+  'onclick': null,
+  'showDuration': '200',
+  'hideDuration': '1000',
+  'timeOut': '5000',
+  'extendedTimeOut': '1000',
+  'showEasing': 'swing',
+  'hideEasing': 'linear',
+  'showMethod': 'fadeIn',
+  'hideMethod': 'fadeOut'
+}"></toaster-container>
+
+<div class="row">
+    <div class="col-sm-12">
+        <a class="btn btn-default" href="/student/create"><span class="glyphicon glyphicon-plus"> New</span></a>
+    </div>
+    <div class="col-sm-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="student in students">
+                    <td>{{student.id}}</td>
+                    <td>{{student.name}}</td>
+                    <td><a href="/student/edit/category/{{student.id}}" class="btn"><span class="glyphicon glyphicon-edit"></span></a></td>
+                    <td><a href="/student/delete/{{student.id}}" class="btn"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="well">
+            <button class="btn btn-success" value="Success" ng-click="toast('success')">Success</button>
+            <button class="btn btn-info" value="Info" ng-click="toast('info')">Info</button>
+            <button class="btn btn-danger" value="Error" ng-click="toast('error')">Error</button>
+        </div>
+    </div>
+</div>
