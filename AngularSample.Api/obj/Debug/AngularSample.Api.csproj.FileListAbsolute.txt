@@ -30,3 +30,34 @@ C:\Users\Juwel Ahmed\Documents\Visual Studio 2013\Projects\AngularSample\Angular
 C:\Users\Juwel Ahmed\Documents\Visual Studio 2013\Projects\AngularSample\AngularSample.Api\obj\Debug\AngularSample.Api.csprojResolveAssemblyReference.cache
 C:\Users\Juwel Ahmed\Documents\Visual Studio 2013\Projects\AngularSample\AngularSample.Api\obj\Debug\AngularSample.Api.dll
 C:\Users\Juwel Ahmed\Documents\Visual Studio 2013\Projects\AngularSample\AngularSample.Api\obj\Debug\AngularSample.Api.pdb
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\AngularSample.Api.dll.config
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\AngularSample.Api.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\AngularSample.Api.pdb
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\Antlr3.Runtime.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\Microsoft.Web.Infrastructure.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\Newtonsoft.Json.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Net.Http.Formatting.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.Helpers.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.Http.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.Http.WebHost.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.Mvc.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.Optimization.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.Razor.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.WebPages.Deployment.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.WebPages.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.WebPages.Razor.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\WebGrease.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\Newtonsoft.Json.xml
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Net.Http.Formatting.xml
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.Http.xml
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.Http.WebHost.xml
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.Helpers.xml
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.Mvc.xml
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.Optimization.xml
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.Razor.xml
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.WebPages.xml
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.WebPages.Deployment.xml
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\System.Web.WebPages.Razor.xml
+E:\GitRoot\Angular-Sample\AngularSample.Api\bin\Antlr3.Runtime.pdb
+E:\GitRoot\Angular-Sample\AngularSample.Api\obj\Debug\AngularSample.Api.dll
+E:\GitRoot\Angular-Sample\AngularSample.Api\obj\Debug\AngularSample.Api.pdb

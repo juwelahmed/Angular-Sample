@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <students>
+    <student>
+      <id>1</id>
+      <name>Juwel Ahmed</name>
+      <email>Test</email>
+      <age>33</age>
+      <address>dhaka</address>
+    </student>
+  </students>
+</root>

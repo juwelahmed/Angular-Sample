@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json.Serialization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Formatting;
 using System.Web.Http;
 
 namespace AngularSample.Api
@@ -13,6 +15,9 @@ namespace AngularSample.Api
 
             // Web API routes
             config.MapHttpAttributeRoutes();
+            var json = GlobalConfiguration.Configuration.Formatters.JsonFormatter;
+            json.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            config.Formatters.Add(json);
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

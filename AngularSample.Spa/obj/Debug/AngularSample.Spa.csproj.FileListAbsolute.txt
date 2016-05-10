@@ -4,3 +4,8 @@ C:\Users\Juwel Ahmed\Documents\Visual Studio 2013\Projects\AngularSample\Angular
 C:\Users\Juwel Ahmed\Documents\Visual Studio 2013\Projects\AngularSample\AngularSample.Spa\obj\Debug\AngularSample.Spa.csprojResolveAssemblyReference.cache
 C:\Users\Juwel Ahmed\Documents\Visual Studio 2013\Projects\AngularSample\AngularSample.Spa\obj\Debug\AngularSample.Spa.dll
 C:\Users\Juwel Ahmed\Documents\Visual Studio 2013\Projects\AngularSample\AngularSample.Spa\obj\Debug\AngularSample.Spa.pdb
+E:\GitRoot\Angular-Sample\AngularSample.Spa\bin\AngularSample.Spa.dll.config
+E:\GitRoot\Angular-Sample\AngularSample.Spa\bin\AngularSample.Spa.dll
+E:\GitRoot\Angular-Sample\AngularSample.Spa\bin\AngularSample.Spa.pdb
+E:\GitRoot\Angular-Sample\AngularSample.Spa\obj\Debug\AngularSample.Spa.dll
+E:\GitRoot\Angular-Sample\AngularSample.Spa\obj\Debug\AngularSample.Spa.pdb
