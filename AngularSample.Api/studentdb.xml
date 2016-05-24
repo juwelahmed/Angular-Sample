@@ -2,11 +2,11 @@
 <root>
   <students>
     <student>
-      <id>1</id>
-      <name>Juwel Ahmed</name>
-      <email>Test</email>
-      <age>33</age>
-      <address>dhaka</address>
+      <id>2</id>
+      <name>Azhar</name>
+      <email>azhar@gmail.com</email>
+      <enrollDate>2016-05-25T18:00:00Z</enrollDate>
+      <address>Dhaka</address>
     </student>
   </students>
 </root>

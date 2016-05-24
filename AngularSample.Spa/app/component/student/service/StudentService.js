@@ -1,35 +1,50 @@
-﻿angular.module('app').factory('StudentService', function () {
-    var factory = {}
-    var students = [];
-    
-    factory.getStudents = function () {
-        students = [];
-        var student = new Student(1, 'Juwel Ahmed',new Date())
-        students.push(student);
-        student = new Student(2, 'Asraful Islam', new Date())
-        students.push(student);
-        student = new Student(3, 'Zillur Rahman', new Date())
-        students.push(student);
-        student = new Student(4, 'Azharul Islam', new Date())
-        students.push(student);
+﻿'use strict'
 
-        return students;
+angular.module('app').factory('StudentService', studentService);
+
+angular.$inject = ['$http']
+
+function studentService($http) {
+
+    var apiUrl = 'http://localhost:8000/api/student';
+
+    return {
+        getStudents: getStudents,
+        getStudent: getStudent,
+        addStudent: addStudent,
+        updateStudent: updateStudent,
+        deleteStudent: deleteStudent
     }
 
-    factory.getStudent = function (id){
-        if (students.length > 0) {
-            for (var i = 0; i <= students.length - 1; i++) {
-                var student = students[i];
-                if (id == student.id) {
-                    return student;
-                }
-            }
-            return null;
-        }
-    }
-    return factory;
+    function getStudents() {
 
-})
+        return $http.get(apiUrl).then(function (response) {
+            return response;
+        })
+    }
+
+    function getStudent(id) {
+        return $http.get(apiUrl + '/' + id.toString()).then(function (response) {
+            return response;
+        })
+    }
+
+    function addStudent(student) {
+        return $http.post(apiUrl, student).then(function (response) {
+            return response;
+        })
+    }
+    function updateStudent(id, student) {
+        return $http.put(apiUrl + '/' + id.toString(), student).then(function (response) {
+            return response;
+        })
+    }
+    function deleteStudent(id) {
+        return $http.delete(apiUrl + '/' + id.toString()).then(function (response) {
+            return response;
+        })
+    }
+}
 
 function Student(id, name, enrollDate) {
     this.id = id;

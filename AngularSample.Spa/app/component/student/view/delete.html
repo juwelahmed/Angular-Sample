@@ -1,0 +1,29 @@
+﻿<div class="row">
+    <h1>Delete Student</h1>
+    <hr />
+</div>
+<!--<toaster-container toaster-options="{'time-out': 3000, 'close-button':true, 'animation-class': 'toast-top-right'}"></toaster-container>-->
+<toaster-container toaster-options="{
+  'closeButton': false,
+  'debug': false,
+  'positionClass': 'toast-top-right',
+  'onclick': null,
+  'showDuration': '200',
+  'hideDuration': '1000',
+  'timeOut': '5000',
+  'extendedTimeOut': '1000',
+  'showEasing': 'swing',
+  'hideEasing': 'linear',
+  'showMethod': 'fadeIn',
+  'hideMethod': 'fadeOut'
+}"></toaster-container>
+
+<div class="row">
+    <div class="col-sm-12 alert alert-danger">
+        Are you confim to delete this item?
+    </div>
+    <div class="col-sm-12">
+        <button class="btn btn-danger" ng-click="delete()">Delete</button>
+        <button type="button" class="btn btn-primary" onclick="window.history.back()">Cancel</button>
+    </div>
+</div>

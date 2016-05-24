@@ -7,10 +7,12 @@ using System.Net;
 using System.Net.Http;
 using System.Web;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Xml.Linq;
 
 namespace AngularSample.Api.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class StudentController : ApiController
     {
         XElement _db;
@@ -39,7 +41,7 @@ namespace AngularSample.Api.Controllers
                     Id = Convert.ToInt32(x.Element("id").Value),
                     Name = x.Element("name").Value,
                     Address = x.Element("address").Value,
-                    Age = Convert.ToInt32(x.Element("age").Value),
+                    EnrollDate = Convert.ToDateTime(x.Element("enrollDate").Value),
                     Email = x.Element("email").Value
                 }).ToList();
 
@@ -56,7 +58,7 @@ namespace AngularSample.Api.Controllers
                     Id = Convert.ToInt32(x.Element("id").Value),
                     Name = x.Element("name").Value,
                     Address = x.Element("address").Value,
-                    Age = Convert.ToInt32(x.Element("age").Value),
+                    EnrollDate = Convert.ToDateTime(x.Element("enrollDate").Value),
                     Email = x.Element("email").Value
                 }).FirstOrDefault();
 
@@ -77,7 +79,7 @@ namespace AngularSample.Api.Controllers
                 new XElement("id", id),
                 new XElement("name", student.Name),
                 new XElement("email", student.Email),
-                new XElement("age", student.Age),
+                new XElement("enrollDate", student.EnrollDate),
                 new XElement("address", student.Address));
 
             _db.Elements("students").LastOrDefault().Add(element);
@@ -101,12 +103,12 @@ namespace AngularSample.Api.Controllers
 
             updateTo.SetElementValue("name", student.Name);
             updateTo.SetElementValue("email", student.Email);
-            updateTo.SetElementValue("age", student.Age);
+            updateTo.SetElementValue("enrollDate", student.EnrollDate);
             updateTo.SetElementValue("address", student.Address);
 
             _db.Save(_dbPath);
-            
-            return Created<Student>(Request.RequestUri + student.Id.ToString(), student);
+
+            return Ok(updateTo);
         }
 
         // DELETE api/student/5

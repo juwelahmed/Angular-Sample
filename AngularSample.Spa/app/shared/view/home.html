@@ -1,108 +1,107 @@
-﻿
-<style>
-    div.checkRadioContainer > label > input {
-        visibility: hidden;
-    }
-    div.checkRadioContainer {
-        max-width: 20em;
-    }
+﻿<style>
+  div.checkRadioContainer > label > input {
+  visibility: hidden;
+  }
+  div.checkRadioContainer {
+  max-width: 20em;
+  }
 
-        div.checkRadioContainer > label {
-            display: block;
-            margin-bottom: -2px;
-            cursor: pointer;
-            /*min-height:100px;*/
-        }
+  div.checkRadioContainer > label {
+  display: block;
+  margin-bottom: -2px;
+  cursor: pointer;
+  /*min-height:100px;*/
+  }
 
-            div.checkRadioContainer > label > span {
-                display: inline-block;
-                vertical-align: middle;
-                line-height: 2em;
-            }
+  div.checkRadioContainer > label > span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 2em;
+  }
 
-            div.checkRadioContainer > label > input + i {
-                visibility: hidden;
-                color: white;
-                margin-left: -0.5em;
-                margin-right: 0.2em;
-            }
+  div.checkRadioContainer > label > input + i {
+  visibility: hidden;
+  color: white;
+  margin-left: -0.5em;
+  margin-right: 0.2em;
+  }
 
-            div.checkRadioContainer > label > input:checked + i {
-                visibility: visible;
-            }
+  div.checkRadioContainer > label > input:checked + i {
+  visibility: visible;
+  }
 
-    .offer-default {
-        border-color: #999999;
-    }
+  .offer-default {
+  border-color: #999999;
+  }
 
-    .offer-info {
-        border-color: #5bc0de;
-    }
+  .offer-info {
+  border-color: #5bc0de;
+  }
 
-    .offer {
-        background: #fff;
-        border: 1px solid #ddd;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        margin: 15px 0;
-        overflow: hidden;
-    }
+  .offer {
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  overflow: hidden;
+  }
 
-    .offer-default .shape {
-        border-color: transparent #999999 transparent transparent;
-    }
+  .offer-default .shape {
+  border-color: transparent #999999 transparent transparent;
+  }
 
-    .shape {
-        border-color: rgba(255,255,255,0) #E8E7F9 rgba(255,255,255,0) rgba(255,255,255,0);
-    }
+  .shape {
+  border-color: rgba(255,255,255,0) #E8E7F9 rgba(255,255,255,0) rgba(255,255,255,0);
+  }
 
-    .shape {
-        border-style: solid;
-        border-width: 0 40px 40px 0;
-        float: right;
-        height: 0px;
-        width: 0px;
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+  .shape {
+  border-style: solid;
+  border-width: 0 40px 40px 0;
+  float: right;
+  height: 0px;
+  width: 0px;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  }
 
-    .shape-text {
-        color: #fff;
-        font-size: 12px;
-        font-weight: bold;
-        position: relative;
-        right: -12px;
-        top: -4px;
-        white-space: nowrap;
-        -ms-transform: rotate(30deg);
-        -o-transform: rotate(360deg);
-        -webkit-transform: rotate(163deg);
-        transform: rotate(6deg);
-    }
+  .shape-text {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  right: -12px;
+  top: -4px;
+  white-space: nowrap;
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(360deg);
+  -webkit-transform: rotate(163deg);
+  transform: rotate(6deg);
+  }
 
-    .offer-content {
-        padding: 0 20px 10px;
-    }
+  .offer-content {
+  padding: 0 20px 10px;
+  }
 
-    .btn-labeled {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+  .btn-labeled {
+  padding-top: 0;
+  padding-bottom: 0;
+  }
 
-    .btn-label {
-        position: relative;
-        left: -12px;
-        display: inline-block;
-        padding: 6px 12px;
-        background: rgba(0,0,0,0.15);
-        border-radius: 3px 0 0 3px;
-    }
+  .btn-label {
+  position: relative;
+  left: -12px;
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(0,0,0,0.15);
+  border-radius: 3px 0 0 3px;
+  }
 
-    .tick {
-        height: 65px;
-        padding-top: 23px;
-    }
+  .tick {
+  height: 65px;
+  padding-top: 23px;
+  }
 </style>
 <h1>{{title}}</h1>
 <!--<div class="checkRadioContainer">
@@ -112,23 +111,23 @@
         <span>Item 1</span>
     </label>
 </div>-->
-<div class="checkRadioContainer">
-    <label class="btn-labeled btn-success">
-        <input type="checkbox" />
-        <i class="tick btn-label glyphicon glyphicon-ok"></i>
-        <span>Emirates Aireline</span>
-    </label>
+<!--<div class="checkRadioContainer">
+  <label class="btn-labeled btn-success">
+    <input type="checkbox" />
+    <i class="tick btn-label glyphicon glyphicon-ok"></i>
+    <span>Emirates Aireline</span>
+  </label>
 </div>
 <div class="checkRadioContainer">
-    <label class="btn-labeled btn-primary">
-        <input type="checkbox" />
-        <i class="tick btn-label glyphicon glyphicon-ok"></i>
-        <span>Bangladesh Aireline Limited</span>
-    </label>
-</div>
+  <label class="btn-labeled btn-primary">
+    <input type="checkbox" />
+    <i class="tick btn-label glyphicon glyphicon-ok"></i>
+    <span>Bangladesh Aireline Limited</span>
+  </label>
+</div>-->
 
 <div class="row">
-    <!--<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+  <!--<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
         <div class="offer offer-info">
             <div class="shape">
                 <div class="shape-text">
@@ -151,7 +150,7 @@
             </div>
         </div>
     </div>-->
-    <!--<div class="col-md-6">
+  <!--<div class="col-md-6">
         <button type="button" class="btn btn-labeled btn-success">
             <span class="btn-label"><i class="glyphicon glyphicon-ok"></i></span>Success
         </button>

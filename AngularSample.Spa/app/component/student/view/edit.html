@@ -40,46 +40,46 @@
 
 </style>
 
-<div>
-    <span class="btn-flat icon">&#65513;</span>
-    <span class="btn-flat">{{title}}</span>
-    <div class="hamburger-menu"></div>
+<div class="row">
+    <h1>{{title}}</h1>
+    <hr />
 </div>
-<hr />
+
 <toaster-container toaster-options="{'time-out': 3000, 'close-button':true, 'animation-class': 'toast-top-right'}"></toaster-container>
 
-
-<form class="form-horizontal">
-    <div class="form-group">
-        <label for="studentId" ng-model="student.id" class="col-sm-2 control-label">Id</label>
-        <div class="col-sm-6">
-            <input type="text" ng-model="student.id" class="form-control" id="studentId" name="studentId" placeholder="id" required>
-        </div>
+<div class="row">
+    <div class="col-sm-12">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="studentName" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-6">
+                    <input type="text" ng-model="student.name" class="form-control" id="studentName" name="studentName" placeholder="Name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="studentEmail" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-6">
+                    <input id="studentEmail" type="text" ng-model="student.email" class="form-control" placeholder="Student Email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address" class="col-sm-2 control-label">Address</label>
+                <div class="col-sm-6">
+                    <input type="text" id="address" ng-model="student.address" class="form-control" placeholder="Student Address" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="enrollDate" class="col-sm-2 control-label">Enroll Date</label>
+                <div class="col-sm-6">
+                    <input type="text" id="enrollDate" class="form-control" ng-model="student.enrollDate" data-date-format="dd-MMM-yyyy" data-autoclose="1" bs-datepicker>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-6 alert alert-info">
+                    <button type="submit" ng-click="save()" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-primary" onclick="window.history.back()">Cancel</button>
+                </div>
+            </div>
+        </form>
     </div>
-    <div class="form-group">
-        <label for="studentName" class="col-sm-2 control-label">Name</label>
-        <div class="col-sm-6">
-            <input type="text" ng-model="student.name" class="form-control" id="studentName" name="studentName" placeholder="Name" required>
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="enrollDate" class="col-sm-2 control-label">Enroll Date</label>
-        <div class="col-sm-6">
-            <input type="text" id="enrollDate" class="form-control" ng-model="student.enrollDate" data-date-format="dd-MMM-yyyy" data-autoclose="1" bs-datepicker>
-        </div>
-    </div><!-- /input-group -->
-    <!--<div class="form-group">
-        <label for="course" class="col-sm-2 control-label">Course</label>
-        <div class="col-sm-6">
-            <select class="form-control" id="course" ng-model="myColor"
-                    data-html="1" data-multiple="1" data-animation="am-flip-x"
-                    ng-options="color.name for color in colors"
-                    bs-select></select>
-        </div>
-    </div>-->
-    <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-6">
-            <button type="submit" ng-click="save()" class="btn btn-default">Save</button>
-        </div>
-    </div>
-</form>
+</div>

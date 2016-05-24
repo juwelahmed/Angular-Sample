@@ -11,7 +11,7 @@ namespace AngularSample.Api.Models
 
         public string Name { get; set; }
         
-        public int Age { get; set; }
+        public DateTime EnrollDate { get; set; }
 
         public string Email { get; set; }
         
